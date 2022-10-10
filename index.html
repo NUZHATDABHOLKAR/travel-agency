@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRAVEL WEBSITE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .imageslider
+      {
+       width:100%;
+       height:550px;
+       background-image: url(./images/5.jpg);
+       background-size: 100% 100%;
+       box-shadow: rgba(149,157,165,0.2)0px 8px 24px;
+       animation:images 7s linear infinite ;
+      }
+      @keyframes images{
+       0%{
+         background-image: url(./images/2.jpg) 
+       }
+       25%{
+         background-image: url(./images/3.jpg)  
+       }
+       50%{
+         background-image: url(./images/4.jpg)  
+       }
+       75%{
+         background-image: url(./images/2.jpg)  
+       }
+      }
+      .images
+      {
+       width:100%;
+       height:500px;
+       background-image: url(./images/a1.jpg);
+       background-size: 100% 100%;
+       box-shadow: rgba(149,157,165,0.2)0px 8px 24px;
+       animation:changeimage 12s linear infinite ;
+      }
+      @keyframes changeimage{
+       0%{
+         background-image: url(./images/a2.jpg) 
+       }
+       25%{
+         background-image: url(./images/a3.jpg)  
+       }
+       50%{
+         background-image: url(./images/a4.jpg)  
+       }
+       75%{
+         background-image: url(./images/a6.jpg)  
+       }
+      }
+   </style>
+  </head>
+  <body>
+    <div class=" z-5 w-full">
+    <div class="  hidden md:block w-full">
+    <div class="container1 w-full ">
+      <div class="flex flex-col w-full  lg:flex-row justify-between border-8 border-blue-900 justify-between">
+        <div class="bg-blue-900 w-full flex flex-col md:flex-row">
+          <h1 class="bg-blue-900 text-yellow-300 font-serif  justify-start inline  ml-12 mt-2  text-2xl w-2/4 hover:text-zinc-300 ">TRAVEL  AGENCY </h1>
+          <input class="placeholder:italic placeholder:text-slate-400 block bg-white ml-96 w-96 justify-end border border-slate-300 rounded-md py-2 pl-5 pr-2 " placeholder="which place do you want to explore............." type="text" name="search"/>
+          <button class="rounded-lg bg-color-900 border-2 border-white p-2 text-white mr-4 px-10 hover:text-yellow-300  ml-2  border-2 border-yellow-300 " ondblclick="search()">Search</button>
+        </div> 
+      </div>
+    </div>
+    </div>
+    <div class=" block md:hidden w-full">
+        <div class="container1 w-full ">
+          <div class="flex flex-col w-full  lg:flex-row justify-between border-8 border-blue-900 justify-between">
+            <div class="bg-blue-900 w-full flex flex-col md:flex-row">
+              <h1 class="bg-blue-900 text-yellow-300 font-serif  justify-start inline   mt-2  mx-auto text-xl w-2/4 hover:text-zinc-50 ">TRAVEL &nbsp;&nbsp; AGENCY </h1>
+              <input class="placeholder:italic placeholder:text-slate-400 block bg-white my-12 justify-end border border-slate-300 rounded-md py-2 pl-5 pr-2 " placeholder="which place do you want to explore............." type="text" name="search"/>
+              <button class="rounded-lg bg-color-900 border-2 border-white p-2 text-white mr-4 px-10 hover:text-yellow-300  ml-2  border-2 border-yellow-300 "  >Search</button>
+      
+            </div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+    </div>
+    <div class=" bg-white flex flex-col md:flex-row justify-center w-full ">
+         <a href="#" class="text-blue-900 ml-9 p-1 hover:text-blue-700 font-bold ">Home</a>
+         <a href="#" class="text-blue-900 ml-9 p-1 hover:text-blue-700 font-bold ">Tours</a>
+         <a href="#" class="text-blue-900 ml-9 p-1 hover:text-blue-700 font-bold ">About us </a>
+         <a href="#" class="text-blue-900 ml-9 p-1 hover:text-blue-700 font-bold ">Discover</a>
+         <a href="#" class="text-blue-900 ml-9 p-1 hover:text-blue-700 font-bold ">Events</a>
+         <a href="#" class="text-blue-900 ml-9 p-1 hover:text-blue-700 font-bold ">Contact us</a>
+    </div>
+    </div>
+    <div class="w-full ">
+    <div class="imageslider">
+        <p class=" text-4xl text-blue-900 text-center  absolte hover:text-white"><br><br>LET US TAKE YOU TO YOUR </p>
+        <h1  class="text-5xl text-center text-blue-900 md:text-6xl font-bold hover:text-white">DREAM DESTINATION</h1>
+        <div class=" hidden md:block">
+        <div class="flex flex-col  rounded-full  lg:flex-row mx-72 p-2 mt-12 bg-blue-900 justify-between">
+            <div >
+              <select  class="bg-blue-900 w-48 rounded-full p-2 border-2 border-yellow-300 text-yellow-300 hover:bg-blue-700">
+                <option value="0">Asia</option>
+                <option value="1">South America</option>
+                <option value="2">North America</option>
+                <option value="3">Antartica</option>
+                <option value="4">Europe</option>
+                <option value="5">Africa</option>
+                <option value="6">oceania</option>
+              </select>
+            </div>
+            <div >
+              <select  class="bg-blue-900 w-48 rounded-full p-2 border-2 border-yellow-300 text-yellow-300 hover:bg-blue-700">
+                <option value="0">All Country</option>
+                <option value="1">India</option>
+                <option value="2">japan</option>
+                <option value="3">Italy</option>
+                <option value="4">Spain</option>
+                <option value="5">France</option>
+                <option value="6">Thailand</option>
+                <option value="6">United kingdom</option>
+                <option value="6">Turkey</option>
+              </select>
+            </div>
+            <div >
+              <select  class="bg-blue-900 w-48 rounded-full p-2 border-2 border-yellow-300 text-yellow-300 hover:bg-blue-700">
+                <option value="0">Your budget</option>
+                <option value="1">$1000</option>
+                <option value="2">$2000</option>
+                <option value="3">$3000</option>
+                <option value="4">$4000</option>
+                <option value="5">$5000</option>
+                <option value="6"> More than $5000</option>
+              </select>
+    
+            </div>
+            <div >
+              <button  onclick="hello()" id="btn"class="text-blue-900 bg-yellow-300 rounded-full p-3">Find Your Tour</button>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+    </div>
+    <div class="mt-12">
+      <h1 class="text-center font-bold mt-2 text-4xl">BEST OFFER</h1>
+      <h3 class="text-center font-bold mt-2 text-4xl">CHECK OUT OUR TOP RELATED TOURS</h3>
+    </div>
+    <div>
+      <div class="flex flex-col lg:flex-row w-full justify-center mt-12">
+        <div class="bg-slate-300  flex-col w-1/1  lg:w-1/4">
+           <img src="./images/8.jpg" class="bg-slate-300" alt="">
+          <div class=" flex flex-row justify-between p-2">
+            <h5>United kingdom</h5>
+            <h5>$5000</h5>
+          </div>
+        </div>
+        <div class="bg-slate-300  flex-col  ml-1 lg:ml-12 w-1/1  lg:w-1/4">
+          <img src="./images/11.jpg" class="bg-slate-300" alt="">
+         <div class=" flex flex-row justify-between p-2">
+           <h5>Spain</h5>
+           <h5>$4000</h5>
+         </div>
+        </div>
+        <div class="bg-slate-300  flex-col  ml-1 lg:ml-12  w-1/1  lg:w-1/4">
+          <img src="./images/10.jpg" class="bg-slate-300" alt="">
+         <div class=" flex flex-row justify-between p-2">
+           <h5>Turkey</h5>
+           <h5>$2000</h5>
+         </div>
+       </div>
+
+      </div>   
+    </div>
+    <div>
+      <div class="flex flex-col lg:flex-row w-full justify-center mt-12">
+        <div class="bg-slate-300  flex-col w-1/1  lg:w-1/4">
+           <img src="./images/12.jpg" class="bg-slate-300" alt="">
+          <div class=" flex flex-row justify-between p-2">
+            <h5>Italy</h5>
+            <h5>$3000</h5>
+          </div>
+        </div>
+        <div class="bg-slate-300  flex-col  ml-1 lg:ml-12 w-1/1  lg:w-1/4">
+          <img src="./images/15.jpg" class="bg-slate-300" alt="">
+         <div class=" flex flex-row justify-between p-2">
+           <h5>Japan</h5>
+           <h5>$4000</h5>
+         </div>
+        </div>
+        <div class="bg-slate-300  flex-col  ml-1 lg:ml-12  w-1/1  lg:w-1/4">
+          <img src="./images/13.jpg" class="bg-slate-300" alt="">
+         <div class=" flex flex-row justify-between p-2">
+           <h5>India</h5>
+           <h5>$2000</h5>
+         </div>
+       </div>
+
+      </div>   
+    </div>
+    <div class="flex flex-col lg:flex-row mx-12 justify-between">
+      
+     <div class="w-1/1 p-auto lg:p-12 lg:w-6/12">
+       <img src="" alt="" class="images">
+     </div>
+     <div class="w-1/1 my-14 flex flex-col lg:w-5/12 bg-indigo-200 shadow-lg shadow-indigo-200/50 ">
+      <!-- <h1 class=" border-8 border-blue-900 text-2xl text-black font-bold   text-center bg-indigo-500 shadow-lg shadow-indigo-500/50 lg:text-6xl  ">Imagine.<br>Explore.<br>Remember</h1> -->
+      <h1 class="  my-auto p-12 text-2xl text-black font-bold   text-center bg-indigo-200 shadow-lg shadow-indigo-200/50 lg:text-6xl  ">Imagine.<br>Explore.<br>Remember</h1>
+  </div>
+    </div>
+  <script>
+  function hello(){
+    prompt("india","do you like it or explore");
+  }
+  function search(){
+    alert("work in progress")
+  }
+
+  </script>
+  </body>
+</html>
