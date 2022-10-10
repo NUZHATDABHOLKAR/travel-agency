@@ -21,4 +21,4 @@ TRAVEL AGENCY
 13 hour 😀🙄
 
 ## LINK
-[CALKE WEBSITE](https://travelagency12.netlify.app/)
+[TRAVEL AGENCY WEBSITE](https://travelagency12.netlify.app/)
