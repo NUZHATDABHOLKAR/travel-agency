@@ -17,3 +17,8 @@ TRAVEL AGENCY
 3)Responsiveness😀
 
 
+## Time Taken
+13 hour 😀🙄
+
+## LINK
+[TRAVEL AGENCY WEBSITE](https://travelagency12.netlify.app/)                                    
