@@ -16,7 +16,6 @@ TRAVEL AGENCY
 2)Button styling<br>
 3)Responsiveness😀
 
-
 ## Time Taken
 13 hour 😀🙄
 
